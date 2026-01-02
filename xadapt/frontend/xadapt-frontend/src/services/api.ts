@@ -8,7 +8,7 @@ import type {
   OverridesResponse,
 } from '../types';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const API_URL = import.meta.env.VITE_API_URL || 'http://52.87.227.144:5000/api';
 
 class APIClient {
   private token: string | null = localStorage.getItem('token');

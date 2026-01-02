@@ -1,7 +1,7 @@
 import { io, Socket } from 'socket.io-client';
 import type { ContextUpdateEvent } from '../types';
 
-const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || 'http://localhost:5000';
+const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || 'http://52.87.227.144:5000';
 
 class SocketService {
   private socket: Socket | null = null;
