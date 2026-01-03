@@ -63,18 +63,18 @@ const thresholdRoutes = require('./routes/thresholds');
 const exportRoutes = require('./routes/export');
 const sceneRoutes = require('./routes/scenes');
 
-app.use('/api/auth', authRoutes);
-app.use('/api/simulator', simulatorRoutes);
-app.use('/api/context', contextRoutes);
-app.use('/api/events', eventRoutes);
-app.use('/api/manual', manualRoutes);
-app.use('/api/automation', automationRoutes);
-app.use('/api/devices', deviceRoutes);
-app.use('/api/thresholds', thresholdRoutes);
-app.use('/api/export', exportRoutes);
-app.use('/api/scenes', sceneRoutes);
+app.use('/auth', authRoutes);
+app.use('/simulator', simulatorRoutes);
+app.use('/context', contextRoutes);
+app.use('/events', eventRoutes);
+app.use('/manual', manualRoutes);
+app.use('/automation', automationRoutes);
+app.use('/devices', deviceRoutes);
+app.use('/thresholds', thresholdRoutes);
+app.use('/export', exportRoutes);
+app.use('/scenes', sceneRoutes);
 
-app.get('/api/health', (req, res) => res.json({ status: 'ok' }));
+app.get('/health', (req, res) => res.json({ status: 'ok' }));
 
 // ---------- Start ----------
 const PORT = process.env.PORT || 5000;
